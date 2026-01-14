@@ -79,7 +79,10 @@ const stats = [
 
 export default function MicroSections() {
   return (
-    <section className="w-full max-w-7xl mx-auto flex flex-col px-6 lg:px-20 gap-20 font-mono py-24">
+    <section
+      id="trayectoria"
+      className="w-full max-w-7xl mx-auto flex flex-col px-6 lg:px-20 gap-20 font-mono py-24"
+    >
       {/* NARRATIVE CHANGE: Título más claro y profesional que engloba toda la trayectoria. */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}

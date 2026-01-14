@@ -43,7 +43,13 @@ export default function Navbar() {
             <a href="#about">Sobre Mí</a>
           </li>
           <li className=" cursor-pointer uppercase text-sm font-black hover:text-cyan-300 transition-all duration-300">
+            <a href="#mindset">Como pienso</a>
+          </li>
+          <li className=" cursor-pointer uppercase text-sm font-black hover:text-cyan-300 transition-all duration-300">
             <a href="#projects">Proyectos</a>
+          </li>
+          <li className=" cursor-pointer uppercase text-sm font-black hover:text-cyan-300 transition-all duration-300">
+            <a href="#trayectoria">Trayectoria</a>
           </li>
           <li className="cursor-pointer uppercase text-sm font-black hover:text-cyan-300 transition-all duration-300">
             <a href="#contacto">Contacto</a>
