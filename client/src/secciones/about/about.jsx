@@ -22,33 +22,32 @@ export default function About() {
         {/* INTRO */}
         <div className="flex flex-col gap-6 border-b border-cyan-400/40 pb-10">
           <h2 className="text-xl md:text-2xl font-bold border-l-4 border-cyan-400 pl-4">
-            Hola, soy Benja{" "}
-            <span className="bg-linear-to-r from-white to-cyan-200 bg-clip-text text-transparent">
-              👋🇦🇷
-            </span>
+            De la Ingeniería de Hardware al Desarrollo Full Stack
           </h2>
 
-          <h3 className="text-base md:text-lg font-semibold text-gray-300">
-            Estudiante de Ingeniería Electrónica · Full Stack Developer
-          </h3>
-
           <p className="text-gray-300 leading-relaxed text-justify indent-4">
-            Soy estudiante de Ingeniería Electrónica con un fuerte interés en el
-            desarrollo de software y sistemas tecnológicos aplicados al mundo
-            real. Disfruto diseñar soluciones completas, desde la arquitectura
-            hasta la implementación final.
+            Mi carrera comenzó con la electrónica y la automatización
+            industrial, donde aprendí a pensar en sistemas, optimizar procesos y
+            trabajar con hardware como PLCs. Esa base me dio una perspectiva
+            única cuando me adentré en el desarrollo de software: no solo veo
+            código, veo la arquitectura completa que conecta el mundo digital
+            con el físico.
           </p>
 
           <p className="text-gray-400 leading-relaxed text-justify indent-4">
-            He trabajado en proyectos full stack, aplicaciones de gestión,
-            sistemas industriales con PLCs e integraciones cloud, combinando
-            programación, electrónica y pensamiento lógico.
+            Hoy, como desarrollador Full Stack, mi pasión es construir
+            soluciones donde el software y el hardware dialogan. Me especializo
+            en crear aplicaciones robustas, desde sistemas de gestión web hasta
+            plataformas IoT que capturan y procesan datos del mundo real. Me
+            mueve la curiosidad por entender cómo funcionan las cosas y el
+            desafío de diseñar sistemas eficientes, escalables y que resuelven
+            problemas complejos.
           </p>
         </div>
 
         {/* TECNOLOGIAS */}
         <div className="flex flex-col gap-10">
-          <h2 className="text-xl font-bold text-white">Tecnologías</h2>
+          <h2 className="text-xl font-bold text-white">Mi Stack Tecnológico</h2>
 
           {/* FRONTEND */}
           <div className="flex flex-col gap-3">
@@ -56,11 +55,11 @@ export default function About() {
             <div className="flex flex-wrap gap-3">
               {[
                 "React",
-                "JavaScript",
+                "JavaScript (ES6+)",
+                "Tailwind CSS",
+                "Framer Motion",
                 "HTML5",
                 "CSS3",
-                "Tailwind CSS",
-                "Context API",
               ].map((tech) => (
                 <span
                   key={tech}
@@ -88,12 +87,27 @@ export default function About() {
               )}
             </div>
           </div>
-
-          {/* TOOLS */}
           <div className="flex flex-col gap-3">
-            <h3 className="text-gray-300 font-bold">Herramientas & Deploy</h3>
+            <h3 className="text-purple-400 font-bold">Cloud & IoT</h3>
             <div className="flex flex-wrap gap-3">
-              {["Git", "GitHub", "AWS", "Node-RED", "PLC Siemens", "Linux"].map(
+              {["AWS", "MQTT", "Node-RED", "Docker"].map((tech) => (
+                <span
+                  key={tech}
+                  className="px-3 py-1 text-sm rounded-md border border-purple-400/40 text-purple-300 bg-purple-400/10"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* INDUSTRIAL & HARDWARE */}
+          <div className="flex flex-col gap-3">
+            <h3 className="text-gray-300 font-bold">
+              Industrial & Hardware
+            </h3>
+            <div className="flex flex-wrap gap-3">
+              {["PLC Siemens LOGO!", "Arduino", "Electrónica Analógica/Digital"].map(
                 (tech) => (
                   <span
                     key={tech}
@@ -107,51 +121,31 @@ export default function About() {
           </div>
         </div>
 
-        {/* PROYECTOS */}
-        <div className="flex flex-col gap-12">
-          {/* PROYECTO ACTUAL */}
-          <div className="border-l-4 border-cyan-400 pl-4 space-y-3">
-            <h2 className="text-xl font-bold text-white">
-              Proyecto Actual · Plataforma de Control de Atletas
-            </h2>
-            <ul className="list-disc list-inside text-gray-300 space-y-1">
-              <li>Arquitectura MERN (MongoDB, Express, React, Node.js)</li>
-              <li>Roles diferenciados: atletas y entrenadores</li>
-              <li>Registro y visualización de entrenamientos</li>
-              <li>Autenticación y manejo de sesiones</li>
-            </ul>
-          </div>
-
-          {/* PROYECTO DESTACADO */}
-          <div className="border-l-4 border-indigo-400 pl-4 space-y-3">
-            <h2 className="text-xl font-bold text-white">
-              Proyecto Destacado · NEXUS (Mueblería Hermanos Jota)
-            </h2>
-            <ul className="list-disc list-inside text-gray-300 space-y-1">
-              <li>Sistema web de gestión comercial</li>
-              <li>Arquitectura MERN</li>
-              <li>Gestión de productos, clientes y ventas</li>
-              <li>Diseño responsive con enfoque en usabilidad</li>
-            </ul>
-          </div>
-        </div>
-
         {/* INTERESES */}
         <div className="flex flex-col gap-4">
           <h2 className="text-xl font-bold text-white">
-            Aprendizaje Continuo e Intereses
+            Intereses y Aprendizaje
           </h2>
 
           <p className="text-gray-400">
-            Además del desarrollo, me interesa entender los sistemas desde una
-            perspectiva integral:
+            Mi curiosidad va más allá del código. Me apasiona:
           </p>
 
           <ul className="list-disc list-inside text-gray-300 space-y-1">
-            <li>Arquitectura de software y sistemas distribuidos</li>
-            <li>Automatización e industria 4.0</li>
-            <li>Cloud computing e IoT</li>
-            <li>Inteligencia artificial aplicada</li>
+            <li>
+              El diseño de arquitecturas de software resilientes y escalables.
+            </li>
+            <li>
+              La exploración espacial y los sistemas embebidos que la hacen
+              posible.
+            </li>
+            <li>
+              La automatización de procesos, desde la industria hasta el hogar.
+            </li>
+            <li>
+              La física detrás de la tecnología y cómo la computación cuántica
+              podría cambiarlo todo.
+            </li>
           </ul>
         </div>
       </section>

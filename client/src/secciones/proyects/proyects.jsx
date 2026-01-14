@@ -7,6 +7,11 @@ import SideTechStack from "../../components/sideAnimation/SideAnimation.jsx";
 
 const projects = [
   {
+    title: "PLC + AWS IoT",
+    description: "Integración industrial entre PLC Siemens y servicios cloud.",
+    iconColor: "#706C61",
+  },
+  {
     title: "Plataforma de Control de Atletas",
     description:
       "Aplicación web para el registro, análisis y visualización de entrenamientos.",
@@ -17,11 +22,6 @@ const projects = [
     description:
       "Sistema de gestión comercial completo desarrollado para una empresa real.",
     iconColor: "#F5E6D3",
-  },
-  {
-    title: "PLC + AWS IoT",
-    description: "Integración industrial entre PLC Siemens y servicios cloud.",
-    iconColor: "#706C61",
   },
 ];
 

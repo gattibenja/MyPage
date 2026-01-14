@@ -22,7 +22,7 @@ export default function Contacto() {
               {"<Contactame />"}
             </h2>
             <p className="text-gray-400 ">
-              ¿Tienes una idea o proyecto? Contáctame.
+              Hablemos de tu próximo proyecto.
             </p>
             <FormularioContacto />
           </div>

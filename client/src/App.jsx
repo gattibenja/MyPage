@@ -1,3 +1,5 @@
+import MicroSections from "./secciones/microSections/MicroSections";
+import EngineeringMindset from "./secciones/engineeringMindset/EngineeringMindset";
 import "./App.css";
 import React from "react";
 import MainLayout from "./layout/Layout";
@@ -12,7 +14,9 @@ function App() {
       <MainLayout>
         <Inicio />
         <About />
+        <EngineeringMindset />
         <Projects />
+        <MicroSections />
         <Contacto />
       </MainLayout>
     </>
