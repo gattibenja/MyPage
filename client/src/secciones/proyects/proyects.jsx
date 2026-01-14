@@ -47,7 +47,7 @@ export default function Projects() {
             />
           </div>
           <div>
-            <h1 className=" text-4xl lg:text-4xl text-center pt-20 pb-10  text-white-300 font-bold font-mono borderb-2 border-cyan-400">
+            <h1 className=" text-4xl lg:text-4xl text-center pt-20 pb-10  bg-clip-text text-transparent bg-linear-to-r from-indigo-950 to-cyan-300 font-bold font-mono borderb-2 border-cyan-400">
               {"<Mis proyectos />"}
             </h1>
             {projects.map((p) => (
