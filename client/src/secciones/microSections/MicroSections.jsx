@@ -5,48 +5,57 @@ import {
   FaGraduationCap,
   FaCode,
   FaRocket,
-  FaCloud,
-  FaTools,
+  FaCogs,
   FaUniversity,
   FaBrain,
   FaSpaceShuttle,
+  FaProjectDiagram,
+  FaGlobe,
 } from "react-icons/fa";
 
-// NARRATIVE CHANGE: La línea de tiempo ahora refleja una visión completa: pasado, presente y futuro.
-// Se posiciona el perfil como un futuro ingeniero de sistemas complejos con una visión clara.
+// NARRATIVE REWRITE: La línea de tiempo se reestructura para seguir una lógica clara y natural:
+// PASADO (Formación técnica) -> APLICACIÓN (Proyectos) -> PRESENTE (Universidad) -> FUTURO (Visión).
+// Se añade el hito del idioma como un pilar de competencia profesional.
 const timeline = [
   {
-    year: "2018-2024",
-    icon: <FaTools className="text-cyan-400" />,
-    title: "Fundamentos en Sistemas y Automatización",
+    step: "01",
+    icon: <FaCogs className="text-cyan-400" />,
+    title: "Base de Ingeniería: Sistemas y Control",
     description:
-      "Inicio mi camino en la ingeniería, desarrollando una base en electrónica, PLCs y sistemas IoT end-to-end, uniendo hardware y software.",
+      "Finalizo mi formación técnica (2024) con una base sólida en electrónica, automatización con PLC y el diseño de sistemas de control para aplicaciones reales.",
   },
   {
-    year: "2025",
-    icon: <FaCloud className="text-gray-300" />,
-    title: "Arquitectura de Software Full Stack",
+    step: "02",
+    icon: <FaProjectDiagram className="text-indigo-400" />,
+    title: "Aplicación: Proyectos E2E",
     description:
-      "Aplico mi mentalidad de sistemas al mundo del software, especializándome en construir aplicaciones robustas, escalables y conectadas.",
+      "Llevo la teoría a la práctica, diseñando y construyendo soluciones completas que integran desde sensores y hardware hasta la nube (AWS, Node.js, MQTT).",
   },
   {
-    year: "PRESENTE",
+    step: "03",
+    icon: <FaGlobe className="text-gray-300" />,
+    title: "Competencia Global: Inglés B2+",
+    description:
+      "Apruebo el examen Cambridge, consolidando el inglés como herramienta clave para trabajar con documentación técnica avanzada y en equipos internacionales.",
+  },
+  {
+    step: "04",
     icon: <FaUniversity className="text-purple-400" />,
-    title: "Ingeniería Electrónica y Sistemas Complejos",
+    title: "Presente: Carrera de Ingeniería Electrónica",
     description:
-      "Actualmente curso Ingeniería Electrónica, profundizando en arquitecturas de control, comunicaciones y el diseño de sistemas que integran múltiples disciplinas.",
+      "Actualmente, profundizo mi conocimiento académico para dominar los sistemas complejos donde software, control y comunicaciones convergen.",
   },
   {
-    year: "FUTURO",
+    step: "05",
     icon: (
       <div className="flex gap-2">
         <FaBrain className="text-pink-400" />
         <FaSpaceShuttle className="text-orange-400" />
       </div>
     ),
-    title: "IA, Bio-aumentación y Exploración Espacial",
+    title: "Visión: IA en Sistemas de Frontera",
     description:
-      "Mi visión es aplicar la ingeniería de sistemas y la IA para resolver desafíos en la interfaz humano-máquina y en la exploración y automatización de sistemas espaciales.",
+      "Mi objetivo es aplicar esta visión de ingeniería integral en la creación de interfaces humano-máquina y sistemas autónomos para la exploración espacial.",
   },
 ];
 
@@ -71,18 +80,18 @@ const stats = [
 export default function MicroSections() {
   return (
     <section className="w-full max-w-7xl mx-auto flex flex-col px-6 lg:px-20 gap-20 font-mono py-24">
-      {/* UX/NARRATIVE CHANGE: El título ahora enfoca en la visión y la trayectoria, no solo en el pasado. */}
+      {/* NARRATIVE CHANGE: Título más claro y profesional que engloba toda la trayectoria. */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="text-3xl lg:text-4xl text-white font-bold text-center mb-12">
-          Visión, Presente y Futuro
+        <h2 className="text-3xl lg:text-4xl text-white font-bold text-center mb-16">
+          Trayectoria y Visión de Ingeniería
         </h2>
         <div className="relative">
           {/* Línea de tiempo visual para desktop */}
-          <div className="hidden md:block absolute top-4 left-0 w-full h-0.5 bg-white/10"></div>
+          <div className="hidden md:block absolute top-4 left-1/2 -translate-x-1/2 w-[85%] h-0.5 bg-white/10"></div>
 
           <div className="flex flex-col md:flex-row justify-between gap-12 md:gap-4">
             {timeline.map((item, index) => (
@@ -96,7 +105,7 @@ export default function MicroSections() {
                   </div>
                   <div className="md:hidden text-3xl mb-2">{item.icon}</div>
                   <h3 className="text-2xl font-bold text-cyan-400 mt-4 mb-2">
-                    {item.year}
+                    {item.step}
                   </h3>
                   <h4 className="text-xl font-bold text-white mb-2 h-14 flex items-center justify-center">
                     {item.title}
@@ -137,14 +146,14 @@ export default function MicroSections() {
         transition={{ duration: 0.5, delay: 0.4 }}
         className="text-center space-y-4"
       >
-        {/* NARRATIVE CHANGE: CTA actualizado para reflejar la ambición y el enfoque en ingeniería de alto nivel. */}
+        {/* NARRATIVE CHANGE: CTA final alineado con una visión de ingeniería madura y colaborativa. */}
         <h2 className="text-3xl lg:text-4xl text-white font-bold">
-          ¿Construimos la próxima generación de sistemas?
+          ¿Tu visión resuena con la mía?
         </h2>
         <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-          Busco colaborar en proyectos que desafíen los límites de la
-          tecnología. Si tu visión involucra la integración de IA, hardware
-          complejo o sistemas autónomos, estamos en la misma sintonía. Hablemos.
+          Siempre estoy abierto a colaborar en proyectos que buscan resolver
+          problemas complejos en la intersección del hardware, el software y la
+          IA. Si crees que podemos construir algo significativo, hablemos.
         </p>
       </motion.div>
     </section>
