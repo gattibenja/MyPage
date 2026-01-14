@@ -108,11 +108,29 @@ export default function Navbar() {
                 </li>
                 <li>
                   <a
+                    href="#mindset"
+                    className="hover:text-cyan-300"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Como pienso
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="#projects"
                     className="hover:text-cyan-300"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Proyectos
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#trayectoria"
+                    className="hover:text-cyan-300"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Trayectoria
                   </a>
                 </li>
                 <li>
