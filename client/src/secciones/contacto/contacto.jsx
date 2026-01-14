@@ -13,7 +13,7 @@ export default function Contacto() {
         transition={{ duration: 0.4, ease: "easeOut" }} // duracion de la animacion y ease atributo para el suavizado de la transicion
       >
         <section
-          className="relative px-5 bg-dark-bg text-white min-h-[91vh] flex justify-center items-center flex-col w-full "
+          className="relative px-0 md:px-5 bg-dark-bg text-white min-h-[91vh] flex justify-center items-center flex-col w-full "
           id="contacto"
         >
           <div className="absolute top-0 left-0 w-full  h-0.5 bg-linear-to-r from-transparent via-fuchsia-600 to-transparent  "></div>

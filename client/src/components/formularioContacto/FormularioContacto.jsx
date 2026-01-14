@@ -72,11 +72,11 @@ export default function FormularioContacto({ onRegistrationSuccess }) {
   });
   return (
     <>
-      <div className="relative">
+      <div className="relative w-[90vw] lg:w-[50vw]">
         <div className="absolute -inset-1 bg-linear-to-r from-cyan-400 via-purple-600 to-indigo-600 rounded-2xl blur-2xl opacity-75 animate-pulse"></div>
         <form
           onSubmit={formik.handleSubmit}
-          className="relative flex flex-col w-full  justify-center text-cyan-200 border border-cyan-300 font-mono font-bold shadow-md shadow-cyan-200 items-center rounded-xl bg-linear-to-br from-slate-950 via-indigo-950 to-purple-900 lg:w-220 lg:h-110 p-6 gap-5"
+          className="relative flex flex-col w-full  justify-center text-cyan-200 border border-cyan-300 font-mono font-bold shadow-md shadow-cyan-200 items-center rounded-xl bg-linear-to-br from-slate-950 via-indigo-950 to-purple-900 lg:w-220 lg:h-110 p-6 sm:p-6 gap-6"
         >
           <div className="flex flex-col md:flex-row gap-6 w-full">
             {/*"NOMBRE Y APELLIDO"*/}
