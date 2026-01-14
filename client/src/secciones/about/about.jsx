@@ -103,20 +103,20 @@ export default function About() {
 
           {/* INDUSTRIAL & HARDWARE */}
           <div className="flex flex-col gap-3">
-            <h3 className="text-gray-300 font-bold">
-              Industrial & Hardware
-            </h3>
+            <h3 className="text-gray-300 font-bold">Industrial & Hardware</h3>
             <div className="flex flex-wrap gap-3">
-              {["PLC Siemens LOGO!", "Arduino", "Electrónica Analógica/Digital"].map(
-                (tech) => (
-                  <span
-                    key={tech}
-                    className="px-3 py-1 text-sm rounded-md border border-gray-500/40 text-gray-300 bg-gray-500/10"
-                  >
-                    {tech}
-                  </span>
-                )
-              )}
+              {[
+                "PLC Siemens LOGO!",
+                "Microcontroladores",
+                "Electrónica Analógica/Digital",
+              ].map((tech) => (
+                <span
+                  key={tech}
+                  className="px-3 py-1 text-sm rounded-md border border-gray-500/40 text-gray-300 bg-gray-500/10"
+                >
+                  {tech}
+                </span>
+              ))}
             </div>
           </div>
         </div>
