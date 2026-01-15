@@ -93,6 +93,11 @@ export default function FormularioContacto({ onRegistrationSuccess }) {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
               />
+              {formik.touched.name && formik.errors.name && (
+                <div className="text-md uppercase text-red-500 font-mono">
+                  {formik.errors.name}
+                </div>
+              )}
             </div>
             {/*"EMAIL"*/}
             <div className="flex flex-1 flex-col justify-center items-start gap-3">
@@ -108,6 +113,11 @@ export default function FormularioContacto({ onRegistrationSuccess }) {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
               />
+              {formik.touched.email && formik.errors.email && (
+                <div className="text-md uppercase text-red-500">
+                  {formik.errors.email}
+                </div>
+              )}
             </div>
           </div>
           {/*"MENSAJE"*/}
@@ -124,6 +134,11 @@ export default function FormularioContacto({ onRegistrationSuccess }) {
               onBlur={formik.handleBlur}
               rows="4"
             />
+            {formik.touched.message && formik.errors.message && (
+              <div className="text-md uppercase text-red-500">
+                {formik.errors.message}
+              </div>
+            )}
           </div>
           {error && (
             <div
