@@ -174,7 +174,7 @@ export default function FormularioContacto({ onRegistrationSuccess }) {
           <button
             type="submit"
             disabled={formik.isSubmitting}
-            className="border border-cyan-400 w-full p-4 hover:bg-cyan-200 hover:text-gray-600 hover:transition-all duration-300 rounded-md"
+            className="border border-cyan-400 w-full p-4 hover:bg-cyan-200 hover:text-gray-600 hover:transition-all hover:scale-102 active:scale-95 duration-300 rounded-md"
           >
             {formik.isSubmitting ? "ENVIANDO..." : "ENVIAR MENSAJE"}
           </button>
