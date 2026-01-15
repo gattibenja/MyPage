@@ -81,7 +81,7 @@ export default function Inicio() {
             </p>
             <div className="flex flex-row gap-5">
               <a
-                href=""
+                href="https://github.com/gattibenja"
                 target="_blank"
                 className="w-12 h-12 flex items-center justify-center border border-gray-700 rounded-lg bg-[#111] text-gray-400 text-xl hover:border-neon-green hover:text-neon-green hover:shadow-[0_0_10px_rgba(34,211,238,0.35)] transition-all duration-300"
                 rel="noopener noreferrer"
@@ -119,4 +119,3 @@ export default function Inicio() {
     </section>
   );
 }
-
