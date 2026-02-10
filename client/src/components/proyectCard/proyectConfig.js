@@ -1,6 +1,7 @@
 import CASSTImg from "../../assets/CASST.png";
 import nexusImg from "../../assets/nexus.png";
 import plcImg from "../../assets/plc.png";
+import cabañaImg from "../../assets/cabaña.png";
 
 export const projectConfig = {
   "Plataforma de Control de Atletas": {
@@ -39,7 +40,7 @@ export const projectConfig = {
   "PLC + AWS IoT": {
     theme: "#D1FBFF",
     color: "#1F71AD",
-    accent: "#706C61",
+    accent: "#F5E6D3",
     subtitle: "Integración IoT Industrial",
     image: plcImg,
     role: "Tecnico de Automatización y Cloud",
@@ -48,6 +49,19 @@ export const projectConfig = {
     solution:
       "Junto a mi equipo diseñamos e implementamos una arquitectura que envía datos desde un PLC Siemens LOGO! a AWS IoT Core usando el protocolo MQTT. Los datos son procesados por Node-RED y almacenados, permitiendo su visualización y análisis en una plataforma cloud.",
     stack: ["PLC Siemens LOGO!", "AWS IoT Core", "MQTT", "Node-RED", "Linux"],
+  },
+  "Cabaña Abrazo del Cielo": {
+    theme: "#58A352",
+    color: "#7EE0C3",
+    accent: "#825937",
+    subtitle: "Cabaña Turistica",
+    image: cabañaImg,
+    role: "Desarrollador Full Stack",
+    problem:
+      "Se necesitaba desarollar un sitio web para una cabaña turistica que permitiese mostrar sus servicios, galeria de fotos y un formulario de contacto para atraer clientes y facilitar la comunicación.",
+    solution:
+      "Desarolle un sitio web con React que permite mostrar los servicios, galeria de fotos y un formulario de contacto para facilitar la comunicación y atraer clientes.",
+    stack: ["React", "Node.js", "Express", "MongoDB", "Redux", "Material UI"],
   },
   default: {
     theme: "#020617",

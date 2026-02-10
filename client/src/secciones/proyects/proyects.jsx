@@ -23,6 +23,12 @@ const projects = [
       "Sistema de gestión comercial completo desarrollado para una empresa real.",
     iconColor: "#F5E6D3",
   },
+  {
+    title: "Cabaña Abrazo del Cielo",
+    description:
+      "Cabaña turistica con galeria de fotos, información de servicios y contacto.",
+    iconColor: "#825937",
+  },
 ];
 
 export default function Projects() {
